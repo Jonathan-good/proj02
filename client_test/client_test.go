@@ -52,12 +52,12 @@ var _ = Describe("Client Tests", func() {
 	var alice *client.User
 	var bob *client.User
 	var charles *client.User
-	// var doris *client.User
-	// var eve *client.User
-	// var frank *client.User
-	// var grace *client.User
-	// var horace *client.User
-	// var ira *client.User
+	var doris *client.User
+	var eve *client.User
+	var frank *client.User
+	var grace *client.User
+	var horace *client.User
+	var ira *client.User
 
 	// These declarations may be useful for multi-session testing.
 	var alicePhone *client.User

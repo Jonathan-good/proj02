@@ -43,6 +43,7 @@ func someUsefulThings() {
 	// Creates a random UUID.
 	randomUUID := uuid.New()
 
+
 	// Prints the UUID as a string. %v prints the value in a default format.
 	// See https://pkg.go.dev/fmt#hdr-Printing for all Golang format string flags.
 	userlib.DebugMsg("Random UUID: %v", randomUUID.String())

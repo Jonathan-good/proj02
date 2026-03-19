@@ -70,12 +70,12 @@ var _ = Describe("Client Tests", func() {
 	aliceFile := "aliceFile.txt"
 	bobFile := "bobFile.txt"
 	charlesFile := "charlesFile.txt"
-	// dorisFile := "dorisFile.txt"
-	// eveFile := "eveFile.txt"
-	// frankFile := "frankFile.txt"
-	// graceFile := "graceFile.txt"
-	// horaceFile := "horaceFile.txt"
-	// iraFile := "iraFile.txt"
+	dorisFile := "dorisFile.txt"
+	eveFile := "eveFile.txt"
+	frankFile := "frankFile.txt"
+	graceFile := "graceFile.txt"
+	horaceFile := "horaceFile.txt"
+	iraFile := "iraFile.txt"
 
 	BeforeEach(func() {
 		// This runs before each test within this Describe block (including nested tests).
@@ -104,7 +104,7 @@ var _ = Describe("Client Tests", func() {
 
 			userlib.DebugMsg("Storing file data: %s", contentOne)
 			err = alice.StoreFile(aliceFile, []byte(contentOne))
-			Expect(err).To(BeNil())
+			Expect(err).To(BeNil()) 
 
 			userlib.DebugMsg("Appending file data: %s", contentTwo)
 			err = alice.AppendToFile(aliceFile, []byte(contentTwo))
